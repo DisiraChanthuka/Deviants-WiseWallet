@@ -11,7 +11,7 @@ import com.github.deviants.wisewallet.data.transaction.TransactionDao
 import kotlinx.coroutines.flow.Flow
 import java.text.NumberFormat
 
-
+//dashboard functions are below
 class ChartsViewModel(private val transactionDao: TransactionDao) : ViewModel() {
 
     val allItems: LiveData<List<Transaction>> = transactionDao.getItems().asLiveData()
@@ -36,7 +36,7 @@ class ChartsViewModel(private val transactionDao: TransactionDao) : ViewModel() 
             .filter { it.transactionType == INCOME }
             .sumOf { expense -> expense.transactionPrice }
     }
-
+//could save changed into showing compulsory expenses
     fun getTotalCouldSave(list: List<Transaction>): Double {
         return list
             .filter { it.transactionType == EXPENSE }
@@ -89,7 +89,7 @@ class ChartsViewModel(private val transactionDao: TransactionDao) : ViewModel() 
             context.getString(R.string.remaining_balance) to remainingBalance
         )
     }
-
+//change theme
     fun setDarkMode(nightTheme: Boolean) {
         AppCompatDelegate.setDefaultNightMode(
             when (nightTheme) {

@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-
+//room db for transaction
 @Database(entities = [Transaction::class], version = 2, exportSchema = false)
 abstract class TransactionRoomDatabase : RoomDatabase() {
     abstract fun itemDao(): TransactionDao

@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.text.NumberFormat
-
+//transaction model
 @Entity(tableName = "transaction" )
 data class Transaction (
     @PrimaryKey(autoGenerate = true)

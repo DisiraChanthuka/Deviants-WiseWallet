@@ -19,13 +19,18 @@
         -->
 
     <item
-        android:id="@id/navigation_chart"
-        android:icon="@drawable/ic_baseline_bar_chart_24"
-        android:title="Chart"/>
+        android:id="@+id/accountsFragment"
+        android:icon="@drawable/baseline_account_balance_24"
+        android:title="Accounts"/>
 
     <item
-        android:id="@id/navigation_settings"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/settings_title" />
+        android:id="@+id/utilsFragment"
+        android:icon="@drawable/baseline_attach_money_24"
+        android:title="Utils" />
+
+    <item
+        android:id="@+id/goalsFragment"
+        android:icon="@drawable/baseline_price_check_24"
+        android:title="Goals" />
 
 </menu>

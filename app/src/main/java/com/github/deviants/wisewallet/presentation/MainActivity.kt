@@ -29,7 +29,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home,
                 R.id.navigation_list,
                 R.id.navigation_chart,
-                R.id.navigation_settings
+                R.id.navigation_settings,
+                R.id.accountsFragment,
+                R.id.goalsFragment,
+                R.id.utilsFragment
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
